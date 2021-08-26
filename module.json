@@ -1,0 +1,17 @@
+{
+	"name": "journal-authoring-utils",
+	"title": "Jounral Authoring Utils",
+	"description": "Adds a shortcut (alt+y) that removes linebreaks from the selected text to the editor",
+	"version": "0.0.4",
+	"minimumCoreVersion": "0.6.0",
+	"compatibleCoreVersion": "0.8.9",
+	"author": "Midges",
+	"esmodules": [],
+	"scripts": ["journal-authoring-utils.js"],
+	"styles": [],
+	"packs": [],
+	"languages": [],
+	"url": "https://github.com/superseva/mce-config",
+	"manifest": "https://raw.githubusercontent.com/superseva/mce-config/master/module.json",
+	"download": "https://github.com/superseva/mce-config/archive/master.zip"
+}
