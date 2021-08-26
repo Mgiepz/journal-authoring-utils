@@ -1,8 +1,8 @@
 {
 	"name": "journal-authoring-utils",
 	"title": "Jounral Authoring Utils",
-	"description": "Adds a shortcut (alt+y) that removes linebreaks from the selected text to the editor",
-	"version": "0.0.4",
+	"description": "A Foundry VTT module that provides some shortcuts for adventure editing",
+	"version": "0.0.1",
 	"minimumCoreVersion": "0.6.0",
 	"compatibleCoreVersion": "0.8.9",
 	"author": "Midges",
@@ -11,7 +11,7 @@
 	"styles": [],
 	"packs": [],
 	"languages": [],
-	"url": "https://github.com/superseva/mce-config",
-	"manifest": "https://raw.githubusercontent.com/superseva/mce-config/master/module.json",
-	"download": "https://github.com/superseva/mce-config/archive/master.zip"
+	"url": "https://https://github.com/Mgiepz/journal-authoring-utils",
+	"manifest": "https://raw.githubusercontent.com/Mgiepz/journal-authoring-utils/main/module.json",
+	"download": "https://github.com/Mgiepz/journal-authoring-utils/archive/refs/tags/v0.0.1.zip"
 }
