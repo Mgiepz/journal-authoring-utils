@@ -10,6 +10,10 @@ Hooks.on("init", () => {
     }
 
     var removeLinebreaks = function (tree) {
+      tree.find('p').each(function(){
+        var text = $(this).text();
+        $(this).text(text + " ");
+      });
       tree.find('p').contents().unwrap().wrapAll('<p>');
       return tree;
     };
@@ -39,15 +43,16 @@ Hooks.on("init", () => {
     };
 
     editor.addShortcut(
-      'alt+y', 'Remove Linebreaks.', function () {
+      'alt+y', 'Format Flufftext.', function () {
         doFormatting(formatFluffText);
       });
 
     editor.addShortcut(
-      'alt+x', 'Format Flufftext.', function () {
+      'alt+x', 'Remove Linebreaks.', function () {
         doFormatting(removeLinebreaks);
       });
 
+/*
     editor.ui.registry.addMenuButton('removeLinebreaks', {
       icon: 'plus',
       fetch: function (callback) {
@@ -55,16 +60,24 @@ Hooks.on("init", () => {
           {
             type: 'menuitem',
             text: 'Remove Linebreaks',
-            shortcut: 'alt+y',
+            shortcut: 'alt+x',
             onAction: function () {
               removeLinebreaks();
+            }
+          },
+          {
+            type: 'menuitem',
+            text: 'Format Flufftext',
+            shortcut: 'alt+y',
+            onAction: function () {
+              formatFluffText();
             }
           }
         ];
         callback(items);
       }
     });
-
+*/
   };
 
 });
